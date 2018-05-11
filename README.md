@@ -31,3 +31,9 @@ git reset HEAD file   然后 git checkout file  
 git rm file.txt     想要直接删除文件，不可修复。
 
 rm fiel.txt  删除以后还可以修复->  git checkout -- file.txt  修复
+
+
+需要自己的电脑和github上面关联时的操作方法：
+1.创建SSH Keys
+ssh-keygen -t rsa -C "niujiawei1994@yahoo.co.jp"
+一路回车设置微默认值
