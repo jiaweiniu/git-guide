@@ -5,7 +5,7 @@ git的基础知识总结
 
 2.编写好文件以后用 git add readme.txt 告诉 git.把文件添加到仓库.
 
-git commit read -m "修改的文件的说明"
+git commit -m "修改的文件的说明"
 
 git status
 时刻掌握仓库当前的状态。
