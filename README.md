@@ -34,6 +34,24 @@ rm fiel.txt  删除以后还可以修复->  git checkout -- file.txt  修复
 
 
 需要自己的电脑和github上面关联时的操作方法：
+
 1.创建SSH Keys
+
 ssh-keygen -t rsa -C "niujiawei1994@yahoo.co.jp"
+
 一路回车设置微默认值
+
+cd .ssh   进入到.ssh目录   
+
+cat id_rsa.pub  打开文件复制文件内容
+
+登录github, 打开account settings, SSH Keys，点击 Add SSH Keys, 填入任意title, 在 Key 栏粘贴刚才复制的内容。点击 Add Keys.
+
+登录github  create a new repo创建新的仓库
+
+将本地仓库和他关联     git remote add origin git@github.com:jiaweiniu/learngit.git
+
+然后把本地仓库的内容推送到gituhb仓库      git push -u origin master (第一次提交需要加 -u)
+
+再次提交  git push origin master
+
