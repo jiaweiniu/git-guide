@@ -28,3 +28,6 @@ git checkout --file.txt    当改错了工作区某个文件的内容，想直
 
 git reset HEAD file   然后 git checkout file  
 
+git rm file.txt     想要直接删除文件，不可修复。
+
+rm fiel.txt  删除以后还可以修复->  git checkout -- file.txt  修复
