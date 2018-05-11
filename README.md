@@ -68,3 +68,7 @@ cat id_rsa.pub  打开文件复制文件内容
 删除分支     git branch -d name
 
 查看分支合并图    git log --graph
+
+当手头工作没有做完时，先 git stash, 保存内容， 恢复时， git stash pop 
+
+git stash list  查看stash内容
