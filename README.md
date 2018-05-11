@@ -67,3 +67,4 @@ cat id_rsa.pub  打开文件复制文件内容
 
 删除分支     git branch -d name
 
+查看分支合并图    git log --graph
