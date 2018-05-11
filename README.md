@@ -15,3 +15,8 @@ git diff readme.txt  如果不记得当时是如何修改的文件可以进行�
 git add readme.txt  再提交给仓库
 
 git log   如果改的多了自己不记得了，输入后会看到每一次改动的信息。
+
+git reset --hard HEAD^   当前版本退回到上一个版本
+
+查看文件的内容是不是上一个版本   cat readme.txt
+
