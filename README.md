@@ -20,3 +20,6 @@ git reset --hard HEAD^   当前版本退回到上一个版本
 
 查看文件的内容是不是上一个版本   cat readme.txt
 
+git reset --hard 343234(想到的地方的代号)  commit id     get reset --hard commit_id
+
+git reflog  是用来记录你每一次的命令。
