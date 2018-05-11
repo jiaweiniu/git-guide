@@ -23,3 +23,8 @@ git reset --hard HEAD^   当前版本退回到上一个版本
 git reset --hard 343234(想到的地方的代号)  commit id     get reset --hard commit_id
 
 git reflog  是用来记录你每一次的命令。
+
+git checkout --file.txt    当改错了工作区某个文件的内容，想直接丢弃工作区的修改时。
+
+git reset HEAD file   然后 git checkout file  
+
