@@ -13,3 +13,5 @@ git status
 git diff readme.txt  如果不记得当时是如何修改的文件可以进行查看。
 
 git add readme.txt  再提交给仓库
+
+git log   如果改的多了自己不记得了，输入后会看到每一次改动的信息。
