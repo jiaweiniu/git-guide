@@ -72,3 +72,7 @@ cat id_rsa.pub  打开文件复制文件内容
 当手头工作没有做完时，先 git stash, 保存内容， 恢复时， git stash pop 
 
 git stash list  查看stash内容
+
+需要开发新的内容的时候，新建一个分支开发，用过以后合并新分支然后删除。
+
+如果需要丢弃一个没有被合并过的分支，     git branch -D name  进行强行删除。
