@@ -76,3 +76,23 @@ git stash list  查看stash内容
 需要开发新的内容的时候，新建一个分支开发，用过以后合并新分支然后删除。
 
 如果需要丢弃一个没有被合并过的分支，     git branch -D name  进行强行删除。
+
+
+
+多人协调工作模式：
+
+1.用 git push origin branch-name 推送自己的修改
+
+2.若推送失败，是因为远程分支比你的本地更新，需要先 git pull 合并
+
+3.若 git pull 提示 no tracking information , 说明本地分支和远程分支的链接关系没有创建，用命令
+
+ git branch --set-upstream branch-name origin/branch-name
+ 
+ 4.git push origin branch-name  推送成功
+ 
+ 查看远程库信息   git remote -v
+ 
+ 本地新建的分支如果不推送到远程，对其他人是不可见的
+ 
+ 
