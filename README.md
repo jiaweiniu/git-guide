@@ -95,4 +95,24 @@ git stash list  查看stash内容
  
  本地新建的分支如果不推送到远程，对其他人是不可见的
  
+ git tag name 用于创建一个标签
  
+ git tag commitid 可以指定为一个id 创建
+ 
+ git tag -a tagname -m "信息"  可以指定标签信息
+ 
+ git tag 可以查看所有标签
+ 
+git show name  查看指定标签的信息 
+
+删除标签  git tag -d tagname     删除指定版本
+
+推送某个标签到远程， git push origin tagname 
+
+一次性将所有标签推送到远程    git push origin --tags
+
+将已经推送到远程的标签删除      
+
+1. 先从本地删除    git tag -d v0.9
+
+2. 从远程删除      git push origin :refs/tags/v0.9
