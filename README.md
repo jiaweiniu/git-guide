@@ -144,3 +144,4 @@ git config --global alias.ci commit
 
 git config --global alias.br branch
 
+当前用户的配置文件都是在主目录下的隐藏文件中  .gitconfig 中，配置别名可以直接修改这个文件，改错了也可以直接删除重新配置
