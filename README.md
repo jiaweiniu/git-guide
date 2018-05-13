@@ -116,3 +116,18 @@ git show name  查看指定标签的信息
 1. 先从本地删除    git tag -d v0.9
 
 2. 从远程删除      git push origin :refs/tags/v0.9
+
+
+同时关联 github 和 码云  方法：
+
+1.先删除已关联的名为 origin的远程库  git remote rm origin
+
+2.先关联github 的远程库   git remote add github git@github.com:jiaweiniu/learngit.git       注意远程库的名字是github 而不是origin了！！
+
+3.再关联码云的远程库   git remote add gitee git@gitee.com:username/learngit.git          注意远程库的名字是gitee, 不是origin
+
+4. 现在查看远程库的消息     git remote -v    就可以看到两个远程库了
+
+5. 推送到github,    git push github master 
+
+6. 推送到码云    git push gitee master   
